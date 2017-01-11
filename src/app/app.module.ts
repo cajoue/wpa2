@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
+import { Wpa2RoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PostListComponent } from './posts/post-list/post-list.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    Wpa2RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
