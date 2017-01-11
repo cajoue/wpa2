@@ -10,7 +10,7 @@ import { Post } from './post';
 export class PostsService {
 
   //private postsUrl = "http://{YOUR_SITE_HERE}.com/wp-json/wp/v2/";
-  private postsUrl = "http://localhost:81/wp_angular/wp-json/wp/v2";
+  private postsUrl = "http://localhost:81/wp_angular/wp-json/wp/v2/";
 
   constructor(private http: Http) { }
 
