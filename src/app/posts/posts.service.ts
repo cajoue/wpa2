@@ -19,4 +19,10 @@ export class PostsService {
     .get(this.postsUrl + 'posts')
     .map((res: Response) => res.json());
   }
+
+  getPost(slug): Observable<Post> {
+    return this.http
+      .get(this.postsUrl + `posts?slug=${slug}`)
+      .map((res:Response) => res.json());
+  }
 }
